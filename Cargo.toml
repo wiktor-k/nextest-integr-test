@@ -1,0 +1,19 @@
+[package]
+name = "nextest-integr-test"
+version = "0.1.0"
+edition = "2024"
+
+[dev-dependencies]
+rstest = "0.23.0"
+rustainers = { version = "0.13.1", path = "../../open-source/rustainers/rustainers" }
+testresult = "0.4.1"
+url = "2.5.4"
+uuid = { version = "1.11.0", features = ["v7"] }
+
+[dependencies]
+env_logger = "0.11.5"
+reqwest = "0.12.9"
+tokio = { version = "1.42.0", features = ["macros", "time"] }
+tracing = "0.1.41"
+tracing-test = "0.2.5"
+ureq = "2.12.1"
